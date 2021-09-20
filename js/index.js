@@ -15,11 +15,11 @@
 //     });
 // })
 
-let liste = $("#liste")
+let liste = $("#liste");
 
 $(".menu button").click((e) =>{
     liste.html("");
-    $.get("https://swapi.dev/api/" + e.target.id, callBack)
+    $.get("https://swapi.dev/api/" + e.target.id, callBack);
 });
 function callBack(settings) {
     for(let i = 0; i < settings.results.length; i++) {
